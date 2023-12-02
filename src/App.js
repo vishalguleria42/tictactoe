@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import { motion, AnimatePresence } from "framer-motion";
+import Square from "./components/ActionHolder";
 import './App.css';
 
 function App() {
@@ -63,7 +65,7 @@ function App() {
 
   return (
     <div className="tic-tac-toe">
-      <h1> TIC-TAC-TOE </h1>
+      <h1> TIC TAC TOE </h1>
       <Button resetGame={resetGame} />
       <div className="game">
         {Array.from("012345678").map((ind) => (
