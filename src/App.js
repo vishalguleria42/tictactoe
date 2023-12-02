@@ -2,6 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [squares, setSquares] = useState(Array(9).fill(""));
+  const [turn, setTurn] = useState("x");
+  const [winner, setWinner] = useState(null);
+
+  const checkEndTheGame = () => {
+      for (let square of squares) {
+          if (!square) return false;
+      }
+      return true;
+  };
+
   return (
     <div className="tic-tac-toe">
         <h1> TIC-TAC-TOE </h1>
