@@ -38,6 +38,23 @@ function App() {
     return null;
   };
 
+
+  const updateSquares = (ind) => {
+    if (squares[ind] || winner) {
+        return;
+    }
+    const s = squares;
+    s[ind] = turn;
+    setSquares(s);
+    setTurn(turn === "x" ? "o" : "x");
+    const W = checkWinner();
+    if (W) {
+        setWinner(W);
+    } else if (checkEndTheGame()) {
+        setWinner("x | o");
+    }
+};
+
   const resetGame = () => {
     setSquares(Array(9).fill(""));
     setTurn("x");
