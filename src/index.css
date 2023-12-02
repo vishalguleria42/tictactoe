@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #222;
+  background: #FBFAF5;
   font-family: consolas;
 }
 
@@ -15,15 +15,15 @@ body {
   text-align: center;
 }
 .tic-tac-toe h1 {
-  color: #eee;
+  color: #111;
 }
 
 .tic-tac-toe button {
   padding: 8px 12px;
   margin: 25px;
   background: transparent;
-  border: 2px solid #eee;
-  color: #eee;
+  border: 1px solid gray;
+  color: #222;
   width: 100px;
   border-radius: 5px;
   transition: 0.2s;
@@ -32,7 +32,7 @@ body {
 }
 
 .tic-tac-toe button:hover {
-  background: #eee;
+  background: #FBFAF5;
   color: #222;
 }
 .tic-tac-toe .game {
@@ -85,11 +85,11 @@ body {
 }
 
 .turn.left span.o {
-  border-color: #eee;
+  border-color: gray;
 }
 .turn.right span.x::before,
 .turn.right span.x::after {
-  background: #eee;
+  background: #FBFAF5;
 }
 .turn.right::after {
   left: 50%;
@@ -106,11 +106,11 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
 }
 .winner .text {
-  background: #111;
+  background: #FBFAF5;
   width: 70%;
   max-width: 400px;
   height: 300px;
-  border: 2px solid #eee;
+  border: 2px solid gray;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -122,13 +122,13 @@ body {
 .winner .text h2 {
   font-size: 2.5em;
   margin: 15px 0;
-  color: #eee;
+  color: #111;
 }
 
 .winner .win {
   margin: 0 auto;
   width: fit-content;
-  border: 2px solid #eee;
+  border: 1px solid gray;
   border-radius: 10px;
   display: flex;
   gap: 15px;
