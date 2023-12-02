@@ -1,4 +1,4 @@
-import "./Square.scss";
+import "./ActionHolder.scss";
 import { motion } from "framer-motion";
 
 const ActionHolder = ({ ind, updateSquares, clsName }) => {
